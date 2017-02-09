@@ -89,10 +89,8 @@ var show = function (config) {
 	}
 	var lastTimestamp;
 
-	function run(timestamp) {
-		if (timestamp === undefined) {
-			timestamp = Date.now();
-		}
+	function run() {
+		timestamp = Date.now();
 		var size = $('.divText').length;
 		if (size < max) {
 			add();
